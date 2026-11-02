@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/images/icons/snail_favicon.png" type="image/png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -17,7 +18,6 @@
 
     <div class="dash" id="dash">
 
-      <!-- Countdown -->
       <section class="panel olive countdown" aria-label="Countdown to race day">
         <p class="cd-label">Until the Chicago Marathon</p>
         <p class="cd-days"><span id="cd-days">0</span> <span class="cd-unit" id="cd-unit">days</span></p>
@@ -25,7 +25,6 @@
         <p class="cd-date">Sunday, October 10, 2027</p>
       </section>
 
-      <!-- Carousel: GivenGain widget and the challenges list (desktop) -->
       <section class="panel carousel-panel" aria-label="Fundraiser and challenges">
         <div class="track" id="track" tabindex="0">
 
@@ -55,7 +54,6 @@
         </div>
       </section>
 
-      <!-- Progress: segmented bar on desktop, vertical list with challenges on mobile -->
       <section class="panel olive progress" aria-labelledby="progress-h">
         <h2 class="sr" id="progress-h">Fundraising progress</h2>
         <p class="progress-top"><strong class="raised-amt" data-raised>$0</strong> <span class="raised-of">raised of <span data-goal>$0</span></span></p>
@@ -65,7 +63,6 @@
         </div>
       </section>
 
-      <!-- Strava run log: embed on desktop, card that opens the app on mobile -->
       <section class="panel feed strava" id="strava-panel" aria-labelledby="strava-h">
         <h2 class="feed-title" id="strava-h">Strava</h2>
         <p class="feed-note">If you're curious to see how my training is going, check out my Strava.</p>
@@ -76,27 +73,22 @@
         </a>
       </section>
 
-      <!-- Instagram button. Set instagramUrl in js/main.js to turn it on. -->
       <section class="panel insta" id="insta-panel" aria-labelledby="insta-h">
         <div class="insta-text">
           <h2 class="feed-title" id="insta-h">Instagram</h2>
           <p class="feed-note">I post each challenge on Instagram when a milestone is reached.</p>
-          <p class="insta-setup" id="insta-setup" hidden>Preview only: set instagramUrl in js/main.js to link your account. This box stays hidden on the live site until you do.</p>
+          <p class="insta-setup" id="insta-setup"p>
         </div>
         <a class="btn" id="insta-btn" href="#" target="_blank" rel="noopener">Open Instagram</a>
       </section>
 
     </div>
-<!--
-    <section id="story" class="story">
-      <h2>Why I'm running</h2>
-      <p>There's many things that I love. Three of them are my friends and family, running, and the city of Chicago. Having the chance to combine all of them is a privilege I am lucky to have. Training, fundraising, and running this race is a small effort compared to what those who battle cancer have to face. Thank you for your support and be sure to check on the challenges I complete to make your donation more entertaining!</p>
-    </section> -->
 
     <section class="final">
       <h2>Help me reach the finish line</h2>
       <p>Give what you can. Share the page if you can't. Anything helps, THANK YOU!!</p>
       <a class="btn" data-donate href="#">Donate on GivenGain</a>
+      <a class="btn btn-alt" data-page href="#">See donors</a>
     </section>
   </main>
 
@@ -105,6 +97,7 @@
   </footer>
 
   <script src="https://widgetplayground.givengain.com/givengain-widgets.js" defer></script>
+  <script src="js/config.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
