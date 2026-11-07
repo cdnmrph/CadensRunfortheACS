@@ -21,8 +21,8 @@ const CONFIG = {
   instagramUrl: "https://www.instagram.com/amateur.xyz",
 
   milestones: [
-    { amount: 250,  title: "Costume long run", challenge: "I run my entire long run (1.5 - 2.5 hours) in a pretty uncomfortable costume." },
-    { amount: 500,  title: "Beer mile", challenge: "1 beer every quarter mile, for a mile." },
+    { amount: 250,  title: "Beer mile", challenge: "1 beer every quarter mile, for a mile." },
+    { amount: 500,  title: "Costume long run", challenge: "I run my entire long run (1.5 - 2.5 hours) in a pretty uncomfortable costume." },
     { amount: 750, title: "Donor's choice", challenge: "The donor who crosses this threshold chooses their own challenge."},
     { amount: 1000, title: "Alphabet run", challenge: "I run until I see every letter of the alphabet on store signs." },
     { amount: 1250, title: "Donor's choice", challenge: "The donor who crosses this threshold chooses their own challenge."},
