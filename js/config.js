@@ -18,7 +18,7 @@ const CONFIG = {
 
   // Instagram button. Paste your account link here, for example "https://www.instagram.com/yourhandle/".
   // While this is empty the box only shows in your local preview and stays hidden on the live site.
-  instagramUrl: "https://www.instagram.com/amateur.xyz",
+  instagramUrl: "https://www.instagram.com/amateur.cdn",
 
   // "Stuff I like" section under the Donate button. Add one entry per link. The section stays hidden while this list is empty.
   // { name: "Product name", category: "Shoes", description: "Why I like it", code: "OPTIONALCODE", offer: "10% off", url: "https://example.com/your-affiliate-link" }  (code and offer are optional)
