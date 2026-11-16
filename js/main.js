@@ -232,6 +232,52 @@ function setupInstagram() {
   }
 }
 
+/* ---------- Stuff I like ---------- */
+function safeUrl(value) {
+  try {
+    const u = new URL(String(value));
+    return u.protocol === "https:" || u.protocol === "http:" ? u.href : "";
+  } catch (err) {
+    return "";
+  }
+}
+
+function setupStuff() {
+  const items = (CONFIG.affiliates || []).filter(a => a && a.name && safeUrl(a.url));
+  const panel = $("#stuff");
+  panel.hidden = items.length === 0;
+  if (!items.length) return;
+
+  if (CONFIG.affiliateNote) {
+    const note = $("#stuff-note");
+    note.textContent = CONFIG.affiliateNote;
+    note.hidden = false;
+  }
+
+  const list = $("#stuff-list");
+  list.replaceChildren();
+  items.forEach(a => {
+    const li = el("li", "aff-item");
+    const text = el("div", "aff-text");
+    text.appendChild(el("p", "aff-name", a.name));
+    if (a.description) text.appendChild(el("p", "aff-desc", String(a.description)));
+    if (a.code) {
+      const offer = el("p", "aff-code");
+      offer.append("Use code ");
+      offer.appendChild(el("strong", "", String(a.code)));
+      offer.append(a.offer ? " for " + String(a.offer) + "." : ".");
+      text.appendChild(offer);
+    }
+    const link = el("a", "btn", "View");
+    link.href = safeUrl(a.url);
+    link.target = "_blank";
+    link.rel = "sponsored noopener";
+    link.setAttribute("aria-label", "View " + a.name + " (opens in a new tab)");
+    li.append(text, link);
+    list.appendChild(li);
+  });
+}
+
 /* ---------- Start ---------- */
 setDonateLinks();
 renderCountdown();
@@ -240,6 +286,8 @@ window.setInterval(renderCountdown, 30000);
 setupCarousel();
 setupStrava();
 setupInstagram();
+setupStuff();
+
 
 buildProgress();
 applyRaised(CONFIG.raised);

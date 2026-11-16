@@ -247,3 +247,16 @@ footer { max-width: 82rem; margin: 0 auto; padding: 1.5rem 1rem 3rem; font-size:
 @media (min-width: 70rem) { .track { overflow-y: hidden; } }
 
 .final .btn { margin: 0 0.75rem 0.75rem 0; }
+
+/* ---------- Stuff I like ---------- */
+.stuff { margin-top: 1.5rem; max-width: 52rem; }
+.stuff .feed-title { margin: 0; font-size: 1.35rem; }
+.stuff p { margin: 0; max-width: none; font-size: 1rem; }
+.aff-list { margin: 0.75rem 0 0; padding: 0; list-style: none; }
+.aff-item { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 0.9rem 0; border-top: 2px solid var(--ink); }
+.aff-text { min-width: 0; }
+.stuff .aff-name { font-weight: 700; font-size: 1.1rem; }
+.stuff .aff-desc, .stuff .aff-code { margin-top: 0.15rem; }
+.aff-item .btn { flex: none; padding: 0.6rem 1.2rem; margin: 0; }
+.stuff .disclosure { margin-top: 0.75rem; font-size: 0.9rem; }
+.stuff .disclosure + .disclosure { margin-top: 0.25rem; }

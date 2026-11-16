@@ -20,6 +20,14 @@ const CONFIG = {
   // While this is empty the box only shows in your local preview and stays hidden on the live site.
   instagramUrl: "https://www.instagram.com/amateur.xyz",
 
+  // "Stuff I like" section under the Donate button. Add one entry per link. The section stays hidden while this list is empty.
+  // { name: "Product name", category: "Shoes", description: "Why I like it", code: "OPTIONALCODE", offer: "10% off", url: "https://example.com/your-affiliate-link" }  (code and offer are optional)
+  affiliates: [
+    { name: "PŪNGAO", category: "Fuel", description: "Raw honey-based fuel for workouts and endurance.", code: "CADENMURPHY", offer: "10% off", url: "https://pungao.co/?ref=Caden" },
+  ],
+  // Optional. Say where the commission goes, for example "I donate every commission to the American Cancer Society." Only write this if it is true.
+  affiliateNote: "",
+
   milestones: [
     { amount: 250,  title: "Beer mile", challenge: "1 beer every quarter mile, for a mile." },
     { amount: 500,  title: "Costume long run", challenge: "I run my entire long run (1.5 - 2.5 hours) in a pretty uncomfortable costume." },
